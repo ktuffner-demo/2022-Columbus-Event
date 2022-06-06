@@ -4,4 +4,7 @@ resource "aws_instance" "tuffnerinstance" {
   tags = {
     "Name" = "tuffner instance"
   }
+  root_block_device {
+    encrypted = "true"
+  }
 }
